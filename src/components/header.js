@@ -50,7 +50,7 @@ const Header = () => {
 					<text className='text-l font-bold'> Want to talk? Be my guest!</text>
 				</a>
 				<span
-					className="absolute h-3 w-3 rounded-full mx-56 -my-11 flex"
+					className="absolute h-3 w-3 rounded-full md:mx-56 mx-60 -my-11 flex"
 					style={{ "background-color": "var(--ping)" }}
 				>
 					<span className="h-3 w-3 rounded-full bg-primary animate-ping"></span>
