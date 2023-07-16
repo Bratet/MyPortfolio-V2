@@ -136,12 +136,12 @@ const AboutPage = () => {
 					href={myResumePDF.pdf.publicURL}
 					target="_blank"
 					className="cursor-pointer font-mono px-3 py-2 flex items-center text-sm text-on-accent border border-square rounded-md transition duration-300 ease-in-out effect"
-                    style={{color: 'var(--primary)'}}
+                    style={{color: 'var(--secondary)'}}
 				>
-					Resume
+					<text className="text-l"> Download Resume </text>
 				</a>
 				<span
-					className="absolute h-3 w-3 rounded-full mx-17 -my-11 flex"
+					className="absolute h-3 w-3 rounded-full mx-36 -my-11 flex"
 					style={{ "background-color": "var(--ping)" }}
 				>
 					<span className="h-3 w-3 rounded-full bg-primary animate-ping"></span>

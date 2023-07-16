@@ -3,17 +3,17 @@ import Fade from 'react-reveal/Fade';
 
 
 const experiences = [
+  // { 
+  //   title: "Yakeey", 
+  //   description: ["Description 1"], 
+  //   skillsAcquired: ["Python", "Django", "Django Rest Framework", "RESTful API", "Pytest", "Docker", "Scrum", "PostgreSQL", "POSTMAN", "Git", "GitHub", "Postgis", "GoogleMaps API"],
+  //   year: "jun 2023 - aug 2023",
+  //   position: "Data Science Intern",
+  //   company: "Yakeey"
+  // },
   { 
-    title: "Yakeey", 
-    description: ["Description 1"], 
-    skillsAcquired: ["Python", "Django", "Django Rest Framework", "RESTful API", "Pytest", "Docker", "Scrum", "PostgreSQL", "POSTMAN", "Git", "GitHub", "Postgis", "GoogleMaps API"],
-    year: "jun 2023 - aug 2023",
-    position: "Machine Learning Engineer Intern",
-    company: "Yakeey"
-  },
-  { 
-    "title": "KubicBits", 
-    "description": [
+    title: "KubicBits", 
+    description: [
         "Developed on-demand transportation service, enhancing user experience by generating the route 400% times faster",
         "Constructed web app with Restful APIS for optimized route planning, decreasing travel time and saving fuel of each vehicle.",
         "Analyzed and optimized multi-vehicle path.",
@@ -22,10 +22,10 @@ const experiences = [
         "Integrated error detection system, reducing delays.",
         "Implemented optimization system into existing backend."
     ], 
-    "year": "28 June 2022 - 28 September 2022",
-    "position": "AI/Backend Developer Intern",
-    "company": "KubicBits",
-    "skillsAcquired": [
+    year: "28 June 2022 - 28 September 2022",
+    position: "AI/Backend Developer Intern",
+    company: "KubicBits",
+    skillsAcquired: [
         "Python",
         "Django",
         "Django Rest Framework",
@@ -89,10 +89,10 @@ const ExperiencePage = () => {
               <div className="flex-auto ml-3 justify-evenly py-2">
                 <div className="flex flex-wrap ">
                   <div className="w-full flex-none text-xs sm:text-sm font-medium grid justify-items-stretch">
-                  <h2 className="flex justify-between text-year" style={{fontSize: '1.5em'}}>
-                  
+                  <h2 className="content highlight flex justify-between text-year" style={{fontSize: '1.5em', lineHeight: '1.5em'}}>
+                      
                       {experiences[activeTabId].position} @{experiences[activeTabId].company}
-                  
+                     
                     </h2>
 
                     <span className="flex justify-between text-year" style={{marginTop: '1em'}}>

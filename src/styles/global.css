@@ -7,14 +7,24 @@ body {
   transition: all 300ms ease 0s;
   overflow-x: hidden;
   
-  --bg: white;
-  --card: white;
-  --theme: #15af91;
-  --primary: #0C134F;
-  --secondary: #1D267D;
-  --ping: #199975;
+  --bg: #dedede;
+  --card: #dedede;
+  --theme: #008080; /* This is a teal color */
+  --primary: #003333; /* Dark teal */
+  --secondary: #14233e; /* Darker teal */
+  --ping: #00b3b3; /* Light teal */
   --shadow: rgba(152, 168, 188, .2);
   background-color: var(--bg);
+}
+
+body.dark {
+  --bg: #0d192e;
+  --card: #14233e;
+  --theme: #008080; /* Same teal color for dark mode */
+  --primary: #66cccc; /* Light teal for dark mode */
+  --secondary: #bbbbbb; /* Less light teal for dark mode */
+  --ping: #66cccc; /* Light teal for dark mode */
+  --shadow: #0a1528;
 }
 
 .list-decorated li::before {
@@ -24,17 +34,6 @@ body {
 
 .list-decorated li {
   margin-bottom: 0.5em;  /* <-- Add this rule for spacing */
-}
-
-
-body.dark {
-  --bg: #0d192e;
-  --card: #14233e;
-  --theme: #8cf5d7;
-  --primary: #ced7f3;
-  --secondary: #8a93ad;
-  --ping: #34D399;
-  --shadow: #0a1528;
 }
 
 .full-width-container {
