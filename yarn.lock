@@ -10764,6 +10764,11 @@ react-visibility-sensor@^5.1.1:
   dependencies:
     prop-types "^15.7.2"
 
+react-wrap-balancer@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/react-wrap-balancer/-/react-wrap-balancer-1.0.0.tgz"
+  integrity sha512-yjDH+I8WGyDfh95gKhX/6ckfSBAltwQkxiYxtLPlyIRQNUVSjvz1uHR6Hpy+zHyOkJQw6GEC5RPglA41QXvzyw==
+
 react-zdog@>=1.0:
   version "1.1.1"
   resolved "https://registry.npmjs.org/react-zdog/-/react-zdog-1.1.1.tgz"
@@ -10776,7 +10781,7 @@ react-zdog@>=1.0:
     resize-observer-polyfill "^1.5.1"
     scheduler "0.13.3"
 
-"react@^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^15.0.0 || ^16.0.0 || ^17.0.0|| ^18.0.0", "react@^15.3.0 || ^16.0.0", react@^16.0.0, "react@^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.3.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0  || >=17.0.0 || >=18.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.9.0 || ^17.0.0", react@^17.0.1, react@^18.0.0, react@^18.2.0, "react@>= 16.8.0", react@>=16.0.0, react@>=16.13, react@>=16.3.0, react@>=16.8, react@>=17.0, react@>=18.0, react@>=18.0.0, "react@15.x || 16.x || 17.x || 18.x", react@16.x, react@17.0.2, react@18.2.0:
+"react@^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^15.0.0 || ^16.0.0 || ^17.0.0|| ^18.0.0", "react@^15.3.0 || ^16.0.0", react@^16.0.0, "react@^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.3.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0  || >=17.0.0 || >=18.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.9.0 || ^17.0.0", react@^17.0.1, react@^18.0.0, react@^18.2.0, "react@>= 16.8.0", react@>=16.0.0, react@>=16.13, react@>=16.3.0, react@>=16.8, "react@>=16.8.0 || ^17.0.0 || ^18", react@>=17.0, react@>=18.0, react@>=18.0.0, "react@15.x || 16.x || 17.x || 18.x", react@16.x, react@17.0.2, react@18.2.0:
   version "17.0.2"
   resolved "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   integrity sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==

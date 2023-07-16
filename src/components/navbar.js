@@ -88,16 +88,22 @@ const Navbar = () => {
                                             About
                                         </a>
                                     </li>
+                                    <li className="nav-item">
+                                    <a href="#experience" className="font-mono px-3 py-2 flex items-center text-sm leading-snug icon">
+  Experiences
+</a>
+
+                                    </li>
                                     <li className="nav-item"> 
                                         <a href="#project" className="font-mono px-3 py-2 flex items-center text-sm leading-snug icon">
-                                            Project
+                                            Projects
                                         </a>
                                     </li>
-                                    <li className="nav-item">
+                                    {/* <li className="nav-item">
                                         <a href="#skills" className="font-mono px-3 py-2 flex items-center text-sm leading-snug icon">
                                             Skills
                                         </a>
-                                    </li>
+                                    </li> */}
                                     <li className="nav-item">
                                         <a href="#contact" className="font-mono px-3 py-2 flex items-center text-sm leading-snug icon">
                                             Contact

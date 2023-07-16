@@ -17,6 +17,16 @@ body {
   background-color: var(--bg);
 }
 
+.list-decorated li::before {
+  content: "• ";
+  color: var(--secondary);  /* <-- Change color if necessary */
+}
+
+.list-decorated li {
+  margin-bottom: 0.5em;  /* <-- Add this rule for spacing */
+}
+
+
 body.dark {
   --bg: #0d192e;
   --card: #14233e;
@@ -44,9 +54,9 @@ svg text {
   stroke: #585c75;
   font-size: 150px;
   font-weight: 700;
-  stroke-width: 3;
+  stroke-width: 1.5;
  
-  animation: textAnimation 5s infinite alternate;
+  animation: textAnimation 10s infinite alternate;
   
 }
 

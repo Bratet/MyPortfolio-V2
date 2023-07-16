@@ -3,7 +3,7 @@ import Navbar from './navbar'
 import Header from './header'
 import AboutPage from './about'
 import ProjectPage from './project'
-// import SkillPage from './skill'
+import SkillPage from './skill'
 import ExperiencePage from './experience'
 import Contact from './contact'
 import Footer from './footer'
@@ -45,8 +45,9 @@ const Layout = ({pageTitle, children}) => {
         <section id="about"><AboutPage/></section>
         <section id="experience"><ExperiencePage/></section>
         <section id="project"><ProjectPage/></section>
+
         {/* <section id="skills"><SkillPage/></section> */}
-        <section id="contact"><Contact/></section>
+        <section id="contact"><Contact/></section> 
         <Footer/>
       </div>
     </main>

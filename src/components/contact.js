@@ -5,6 +5,7 @@ const Contact = () => {
   return(
     <div className="mt-25 full-width-container">
       <div className="container max-w-screen-xl mx-auto pt-16">
+      <div style={{height: "100px"}}></div>  {/* This div acts as a spacer */}
         <Fade top>
           <h1 className= "font-mono text-center" style={{color: 'var(--primary)'}}>
             {'<'} get in touch{' />'}
