@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react';
 import Fade from 'react-reveal/Fade';
-import Balancer from 'react-wrap-balancer';
 
 
 const experiences = [

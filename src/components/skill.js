@@ -8,7 +8,7 @@ const SkillPage = () => {
         <Fade top>
             <h1 className="font-mono" style={{color: 'var(--primary)'}}>{'<'} skills{' />'}</h1>
         </Fade>
-        <div className="flex flex-wrap md grid md:grid-cols-2 divide-x p-10">
+        <div className="flex flex-wrap md md:grid-cols-2 divide-x p-10">
             {/* Language */}
             <Fade left>
                 <div className = "p-10">
