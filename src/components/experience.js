@@ -114,7 +114,7 @@ const ExperiencePage = () => {
                     <div className="flex-1 inline-flex items-center">
                       <p style={{fontSize: '1em'}}>
                         
-                        {experiences[activeTabId].skillsAcquired.join(' Â· ')}
+                        {experiences[activeTabId].skillsAcquired.join(' · ')}
                           
                       </p>
                     </div>
