@@ -43,6 +43,7 @@ const experiences = [
   },
   // Add more experiences here
 ];
+
 const ExperiencePage = () => {
   const [activeTabId, setActiveTabId] = useState(0);
   const tabs = useRef([]);
@@ -53,14 +54,14 @@ const ExperiencePage = () => {
     }
   };
 
-
+  React.useEffect(() => focusTab(), [activeTabId]);
 
   return (
     <Fade>
-      <div id="experience" className="container m-auto mt-5 mb-5 sm:mt-10 sm:mb-10 md:mt-25 md:mb-20 px-2 sm:px-4 md:px-20 max-w-screen-xl py-5 flex flex-col items-center justify-center space-y-6 md:space-x-6">
+      <div className="container m-auto mt-5 mb-5 sm:mt-10 sm:mb-10 md:mt-25 md:mb-20 px-2 sm:px-4 md:px-20 max-w-screen-xl py-5 flex flex-col items-center justify-center space-y-6 md:space-x-6">
       <Fade right><h1 className="font-mono" style={{color: 'var(--primary)'}}>{'<'} experience {' />'}</h1></Fade>
-        <div className="flex flex-col md:flex-row space-y-2 md:space-x-8 mt-8 mb-8 md:max-w-lg lg:max-w-2xl">
-          <div className="flex flex-col space-y-2 max-w-sm md:max-w-xs lg:max-w-md">
+        <div className="flex flex-col md:flex-row space-y-2 md:space-x-8 mt-8 mb-8 max-w-lg md:max-w-full">
+          <div className="flex flex-col space-y-2">
             {experiences.map((exp, index) => (
               <button 
                 key={index} 
@@ -84,13 +85,16 @@ const ExperiencePage = () => {
             ))}
           </div>
           <Fade right key={activeTabId}>
-            <div className="shadow-md rounded-2xl p-2 sm:p-4 hover:shadow-xl transform hover:scale-105 transition duration-500 hover:content highlight max-w-xs md:max-w-md lg:max-w-lg" style={{background: 'var(--card)', flex: '1', minWidth: '0', minHeight: '400px', border: 'none'}}>
+            <div className="shadow-md rounded-2xl p-2 sm:p-4 hover:shadow-xl transform hover:scale-105 transition duration-500 hover:content highlight" style={{background: 'var(--card)', flex: '1', minWidth: '0', minHeight: '400px', border: 'none'}}>
               <div className="flex-auto ml-3 justify-evenly py-2">
                 <div className="flex flex-wrap ">
                   <div className="w-full flex-none text-xs sm:text-sm font-medium grid justify-items-stretch">
-                  <h2 className="flex justify-between text-year" style={{fontSize: '1.5em', lineHeight: '1.5em'}}>
+                  <h2 className="flex justify-between text-year" style={{fontSize: '1.5em'}}>
+                  
                       {experiences[activeTabId].position} @{experiences[activeTabId].company}
+                  
                     </h2>
+
                     <span className="flex justify-between text-year" style={{marginTop: '1em'}}>
                       {experiences[activeTabId].year}
                     </span>
@@ -98,16 +102,20 @@ const ExperiencePage = () => {
                   <p className="mt-3"></p>
                   <div className="flex py-4 flex-col text-sm" style={{color: 'var(--secondary)', marginTop: '1em'}}>
                     <div className="flex-1 inline-flex items-center">
-                      <ul className="list-decorated">
-                        {experiences[activeTabId].description.map((desc) => (
-                          <li style={{fontSize: '1.2em'}}>{desc}</li>
-                        ))}
-                      </ul>
+                    <ul className="list-decorated">
+                      
+                      {experiences[activeTabId].description.map((desc) => (
+                        <li style={{fontSize: '1.2em'}}>{desc}</li>
+                      ))}
+                    
+                    </ul>
                     </div>
                     <h3 style={{marginTop: '1em', color: 'var(--theme)'}}>Skills Acquired</h3>
                     <div className="flex-1 inline-flex items-center">
                       <p style={{fontSize: '1em'}}>
-                        {experiences[activeTabId].skillsAcquired.join(' · ')}
+                        
+                        {experiences[activeTabId].skillsAcquired.join(' Â· ')}
+                          
                       </p>
                     </div>
                   </div>

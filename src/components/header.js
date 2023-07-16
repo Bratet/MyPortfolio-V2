@@ -27,8 +27,8 @@ const Header = () => {
     }, []);
 
     return(
-        <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-10 sm:py-20 md:py-30 lg:py-40 mt-10 sm:mt-20 md:mt-30 lg:mt-40 flex flex-col items-center space-y-6">
-            <h1 className="animate-bounce font-mono" style={{color: 'var(--secondary)'}}><Fade>Hi, my name is</Fade></h1>
+        <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-10 sm:py-20 md:py-30 lg:py-40 mt-14 sm:mt-20 md:mt-30 lg:mt-40 flex flex-col items-center space-y-6">
+            <h1 className="animate-bounce font-mono md:mb-20" style={{color: 'var(--secondary)'}}><Fade>Hi, my name is</Fade></h1>
             <div className='w-full text-center' ref={ref}>
                 <svg
                     style={{ overflow: 'visible' }}

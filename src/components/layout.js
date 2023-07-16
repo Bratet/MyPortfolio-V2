@@ -39,6 +39,7 @@ const Layout = ({pageTitle, children}) => {
 
       <div>
         <Navbar/>
+        <div className='flex flex-col items-center justify-center mx-4'>
         <section id="home"><Header/></section>
         <title >{pageTitle}</title>
         {/* {children} */}
@@ -49,6 +50,7 @@ const Layout = ({pageTitle, children}) => {
         {/* <section id="skills"><SkillPage/></section> */}
         <section id="contact"><Contact/></section> 
         <Footer/>
+        </div>
       </div>
     </main>
   )

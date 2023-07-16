@@ -2,22 +2,14 @@ import * as React from 'react'
 import { useState, useEffect } from "react"
 import "../styles/global.css"
 import Fade from 'react-reveal/Fade' 
-import { useStaticQuery, graphql } from "gatsby"
+
 
 // https://medium.com/@chrisfitkin/how-to-smooth-scroll-links-in-gatsby-3dc445299558
 if (typeof window !== 'undefined') {
     require('smooth-scroll')('a[href*="#"]');
   }
 const Navbar = () => {
-    const myResumePDF = useStaticQuery(graphql`
-    {
-      pdf: file(name: { eq: "Resume" }) {
-        name
-        extension
-        publicURL
-      }
-    }
-  `)
+    
     // determined if page has scrolled
     const [state, setState] = useState({
         scrolled: false,
@@ -108,14 +100,6 @@ const Navbar = () => {
                                         <a href="#contact" className="font-mono px-3 py-2 flex items-center text-sm leading-snug icon">
                                             Contact
                                         </a>
-                                    </li>
-                                    <li className="nav-item mx-5">
-                                        <a href={myResumePDF.pdf.publicURL} target="_blank" className="cursor-pointer font-mono px-3 py-2 flex items-center text-sm text-on-accent border border-square rounded-md transition duration-300 ease-in-out effect">
-                                            Resume
-                                        </a>
-                                        <span className="absolute h-3 w-3 rounded-full mx-17 -my-11 flex" style={{'background-color': 'var(--ping)'}}>
-                                            <span className="h-3 w-3 rounded-full bg-primary animate-ping"></span>
-                                        </span>
                                     </li>
                                 </ul>
                             </div>

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Fade from 'react-reveal/Fade';
 
+
 const Contact = () => {
   return(
     <div className="mt-25 full-width-container">
@@ -27,6 +28,7 @@ const Contact = () => {
             </a>
           </div>
         </Fade>
+        
       </div>
     </div>
   )
