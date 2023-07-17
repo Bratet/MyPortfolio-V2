@@ -48,13 +48,13 @@ const ExperiencePage = () => {
   const [activeTabId, setActiveTabId] = useState(0);
   const tabs = useRef([]);
 
-  const focusTab = () => {
-    if (tabs.current[activeTabId]) {
-      tabs.current[activeTabId].focus();
-    }
-  };
+  // const focusTab = () => {
+  //   if (tabs.current[activeTabId]) {
+  //     tabs.current[activeTabId].focus();
+  //   }
+  // };
 
-  React.useEffect(() => focusTab(), [activeTabId]);
+  // React.useEffect(() => focusTab(), [activeTabId]);
 
   return (
     <Fade>
