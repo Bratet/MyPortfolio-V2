@@ -9,7 +9,7 @@ body {
   
   --bg: #ebebeb;
   --card: #ebebeb;
-  --theme: #009b9bc2; /* This is a teal color */
+  --theme: #009b9b9f; /* This is a teal color */
   --primary: #003333; /* Dark teal */
   --secondary: #14233e; /* Darker teal */
   --ping: #00b3b3; /* Light teal */
@@ -20,7 +20,7 @@ body {
 body.dark {
   --bg: #0d192e;
   --card: #14233e;
-  --theme: #009b9bc2; /* Same teal color for dark mode */
+  --theme: #009b9b9f; /* Same teal color for dark mode */
   --primary: #66cccc; /* Light teal for dark mode */
   --secondary: #bbbbbb; /* Less light teal for dark mode */
   --ping: #66cccc; /* Light teal for dark mode */
