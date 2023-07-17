@@ -3,14 +3,14 @@ import Fade from 'react-reveal/Fade';
 
 
 const experiences = [
-  { 
-    title: "Yakeey", 
-    description: ["Description 1"], 
-    skillsAcquired: ["Python", "Django", "Django Rest Framework", "RESTful API", "Pytest", "Docker", "Scrum", "PostgreSQL", "POSTMAN", "Git", "GitHub", "Postgis", "GoogleMaps API"],
-    year: "jun 2023 - aug 2023",
-    position: "Data Science Intern",
-    company: "Yakeey"
-  },
+  // { 
+  //   title: "Yakeey", 
+  //   description: ["Description 1"], 
+  //   skillsAcquired: ["Python", "Django", "Django Rest Framework", "RESTful API", "Pytest", "Docker", "Scrum", "PostgreSQL", "POSTMAN", "Git", "GitHub", "Postgis", "GoogleMaps API"],
+  //   year: "jun 2023 - aug 2023",
+  //   position: "Data Science Intern",
+  //   company: "Yakeey"
+  // },
   { 
     title: "KubicBits", 
     description: [
