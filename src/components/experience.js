@@ -65,7 +65,7 @@ const ExperiencePage = () => {
             {experiences.map((exp, index) => (
               <button 
                 key={index} 
-                className={`shadow-md rounded-2xl p-2 sm:p-4 hover:shadow-xl transform hover:scale-105 transition duration-500 hover:content highlight ${index === activeTabId ? 'active' : ''}`} 
+                className={`content highlight shadow-md rounded-2xl p-2 sm:p-4 hover:shadow-xl transform hover:scale-105 transition duration-500 ${index === activeTabId ? 'active' : ''}`} 
                 onClick={() => setActiveTabId(index)}
                 style={{
                   background: 'var(--card)', 
@@ -80,16 +80,16 @@ const ExperiencePage = () => {
                 aria-controls={`panel-${index}`}
                 tabIndex={activeTabId === index ? '0' : '-1'}
               >
-                <h1 className="flex-auto text-lg font-bold">{exp.title}</h1>
+                <h1 className="flex-auto text-lg font-bold ">{exp.title}</h1>
               </button>
             ))}
           </div>
           <Fade right key={activeTabId}>
-            <div className="shadow-md rounded-2xl p-2 sm:p-4 hover:shadow-xl transform hover:scale-105 transition duration-500 hover:content highlight" style={{background: 'var(--card)', flex: '1', minWidth: '0', minHeight: '400px', border: 'none'}}>
+            <div className="shadow-md rounded-2xl p-2 sm:p-4 hover:shadow-xl transform hover:scale-105 transition duration-500 hover:content highlight" style={{background: 'var(--card)', minHeight: '400px'}}>
               <div className="flex-auto ml-3 justify-evenly py-2">
                 <div className="flex flex-wrap ">
-                  <div className="w-full flex-none text-xs sm:text-sm font-medium grid justify-items-stretch">
-                  <h2 className="content highlight flex justify-between text-year" style={{fontSize: '1.5em', lineHeight: '1.5em'}}>
+                  <div className="content highlight w-full flex-none text-xs sm:text-sm font-medium grid justify-items-stretch">
+                  <h2 className="content highlight flex justify-between text-year" style={{fontSize: '1.5em', lineHeight: '1.5em', color: 'var(--primary)'}} >
                       
                       {experiences[activeTabId].position} @{experiences[activeTabId].company}
                      

@@ -7,9 +7,9 @@ body {
   transition: all 300ms ease 0s;
   overflow-x: hidden;
   
-  --bg: #dedede;
-  --card: #dedede;
-  --theme: #008080; /* This is a teal color */
+  --bg: #ebebeb;
+  --card: #ebebeb;
+  --theme: #009b9bc2; /* This is a teal color */
   --primary: #003333; /* Dark teal */
   --secondary: #14233e; /* Darker teal */
   --ping: #00b3b3; /* Light teal */
@@ -20,7 +20,7 @@ body {
 body.dark {
   --bg: #0d192e;
   --card: #14233e;
-  --theme: #008080; /* Same teal color for dark mode */
+  --theme: #009b9bc2; /* Same teal color for dark mode */
   --primary: #66cccc; /* Light teal for dark mode */
   --secondary: #bbbbbb; /* Less light teal for dark mode */
   --ping: #66cccc; /* Light teal for dark mode */
@@ -50,7 +50,7 @@ svg text {
   padding: 200px;
   font-family: Lora;
   letter-spacing: 10px;
-  stroke: #585c75;
+  stroke: #54a3bb;
   font-size: 150px;
   font-weight: 700;
   stroke-width: 1.5;
@@ -103,14 +103,14 @@ body.dark svg text {
 .highlight h1{
   background-position: left;
   background-size: 0% 100%;
-  background-image: linear-gradient(#d6d4ec,#d6d4ec);
+  background-image: linear-gradient(#b0e1e4,#b0e1e4);
 }
 .highlight:hover h1 {
   background-size: 100% 100%;
   color: var(--primary);
 }
 .highlight:hover h1 svg path{
-  fill:rgb(124, 153, 252);
+  fill:rgb(124, 158, 252);
 }
 .highlight-under {
   background: linear-gradient(to top, #d6d4ec 10%, transparent 20%);
@@ -257,7 +257,7 @@ header {
   transition: 0.3s ease;
 }
 .dark-button label:before {
-  background-color: #b1a6c4;
+  background-color: #a6c4bf;
 }
 .dark-button label:after {
   background-color: #0d192e;
