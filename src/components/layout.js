@@ -17,28 +17,20 @@ const Layout = ({pageTitle, children}) => {
       <Fade bottom>
         <div className="fixed items-center bottom-0 left-20 hidden md:block">
           <ThemeToggler>
-            {({theme, toggleTheme}) => {
-              // Instead of returning a loading spinner, we'll just not render anything until the theme is defined
-              if (theme == null) {
-                return null;
-              }
-
-              return (
-                <div className = "dark-button">
-                  <input
-                    type = "checkbox"
-                    id = "toggle"
-                    onChange = {e => toggleTheme(e.target.checked ? "dark" : "light")}
-                    checked = {theme === "dark"}
+            {({theme, toggleTheme}) =>(
+              <div className = "dark-button">
+                <input
+                  type = "checkbox"
+                  id = "toggle"
+                  onChange = {e => toggleTheme(e.target.checked ? "dark" : "light")}
+                  checked = {theme === "dark"}
                   />
-                  <label htmlFor = "toggle"></label>
-                </div>
-              )
-            }}
+                  <label for = "toggle"></label>
+              </div>
+            )}
           </ThemeToggler>
           <div className="vl mt-5"></div>
         </div>
-
         <div className="fixed items-center bottom-0 right-20 hidden md:block" style={{color: 'var(--secondary)'}}>
           <a href="mailto:ahmedmrabet.002@gmail.com" className="aside text-sm icon transform transition duration-500 hover:scale-105">ahmedmrabet.002@gmail.com</a>
           <div className="vl mt-5"></div>
