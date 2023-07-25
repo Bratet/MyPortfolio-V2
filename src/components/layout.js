@@ -15,19 +15,25 @@ const Layout = ({pageTitle, children}) => {
   return (
     <main>
       <Fade bottom>
-        <div className="fixed items-center bottom-0 left-20 hidden md:block">
+      <div className="fixed items-center bottom-0 left-20 hidden md:block">
           <ThemeToggler>
-            {({theme, toggleTheme}) =>(
-              <div className = "dark-button">
-                <input
-                  type = "checkbox"
-                  id = "toggle"
-                  onChange = {e => toggleTheme(e.target.checked ? "dark" : "light")}
-                  checked = {theme === "dark"}
+            {({theme, toggleTheme}) => {
+              if (theme == null) {
+                return <div>Loading...</div>; // Or some loading spinner
+              }
+
+              return (
+                <div className = "dark-button">
+                  <input
+                    type = "checkbox"
+                    id = "toggle"
+                    onChange = {e => toggleTheme(e.target.checked ? "dark" : "light")}
+                    checked = {theme === "dark"}
                   />
-                  <label for = "toggle"></label>
-              </div>
-            )}
+                  <label htmlFor = "toggle"></label>
+                </div>
+              )
+            }}
           </ThemeToggler>
           <div className="vl mt-5"></div>
         </div>

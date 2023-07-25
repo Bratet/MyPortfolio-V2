@@ -10,8 +10,8 @@ body {
   --bg: #ebebeb;
   --card: #ebebeb;
   --theme: #009b9b9f; /* This is a teal color */
-  --primary: #003333; /* Dark teal */
-  --secondary: #14233e; /* Darker teal */
+  --primary: #005a5a; /* Dark teal */
+  --secondary: #184550; /* Darker teal */
   --ping: #00b3b3; /* Light teal */
   --shadow: rgba(152, 168, 188, .2);
   background-color: var(--bg);
