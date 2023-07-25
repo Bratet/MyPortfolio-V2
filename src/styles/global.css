@@ -55,7 +55,7 @@ svg text {
   font-weight: 700;
   stroke-width: 1.5;
  
-  animation: textAnimation 10s infinite alternate;
+  animation: textAnimation 4s infinite alternate;
   
 }
 

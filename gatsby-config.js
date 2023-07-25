@@ -1,6 +1,6 @@
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
-});
+})
 
 module.exports = {
   siteMetadata: {
@@ -12,20 +12,21 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
-          process.env.GA_TRACKING_ID, // You can add multiple ID's here
-        ],
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: false,
-        // Setting this parameter is optional
-        anonymize: true,
-        // Setting this parameter is also optional
-        respectDNT: true,
+          process.env.GA_TRACKING_ID, // Google Analytics / GA
 
-        // Delays sending pageview hits on route update (in milliseconds)
-        pageTransitionDelay: 0,
-        // Defers execution of google analytics script after page load
-        defer: false,
+        ],
+        // This object is used for configuration specific to this plugin
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: false,
+          // Setting this parameter is also optional
+          respectDNT: true,
+
+          // Delays processing pageview events on route update (in milliseconds)
+          delayOnRouteUpdate: 0,
+        },
       },
     },
     "gatsby-plugin-postcss",
@@ -35,6 +36,13 @@ module.exports = {
       options: {
         name: `assets`,
         path: `${__dirname}/src/assets/`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'src/assets/icon.png',
+        theme_color: `#009b9b9f`,
       },
     },
   ],
