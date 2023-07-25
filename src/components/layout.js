@@ -10,17 +10,17 @@ import Footer from './footer'
 import Fade from 'react-reveal/Fade'
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import "../styles/global.css"
-import { useEffect } from 'react';
-import ReactGA from 'react-ga';
-import { useLocation } from '@reach/router';  // import useLocation
+// import { useEffect } from 'react';
+// import ReactGA from 'react-ga';
+// import { useLocation } from '@reach/router';  // import useLocation
 
 const Layout = ({pageTitle, children}) => {
-  const location = useLocation();  // use useLocation to get location object
+  // const location = useLocation();  // use useLocation to get location object
 
-  useEffect(() => {
-    ReactGA.initialize(process.env.GA_TRACKING_ID);
-    if (location) ReactGA.pageview(location.pathname + location.search);
-  }, [location]);
+  // useEffect(() => {
+  //   ReactGA.initialize(process.env.GA_TRACKING_ID);
+  //   if (location) ReactGA.pageview(location.pathname + location.search);
+  // }, [location]);
   
 
   return (
