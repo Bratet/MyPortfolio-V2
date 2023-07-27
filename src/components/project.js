@@ -116,7 +116,7 @@ const ProjectPage = () => {
 					<text className='text-l font-bold'> Check out my github for more !!</text>
 				</a>
 				<span
-					className="absolute h-3 w-3 rounded-full md:mx-64 mx-60 -my-11 flex"
+					className="absolute h-3 w-3 rounded-full md:mx-64 mx-64 -my-11 flex"
 					style={{ "background-color": "var(--ping)" }}
 				>
 					<span className="h-3 w-3 rounded-full bg-primary animate-ping"></span>
