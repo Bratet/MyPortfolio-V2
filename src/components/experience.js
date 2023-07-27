@@ -3,14 +3,32 @@ import Fade from 'react-reveal/Fade';
 
 
 const experiences = [
-  // { 
-  //   title: "Yakeey", 
-  //   description: ["Description 1"], 
-  //   skillsAcquired: ["Python", "Django", "Django Rest Framework", "RESTful API", "Pytest", "Docker", "Scrum", "PostgreSQL", "POSTMAN", "Git", "GitHub", "Postgis", "GoogleMaps API"],
-  //   year: "jun 2023 - aug 2023",
-  //   position: "Data Science Intern",
-  //   company: "Yakeey"
-  // },
+  {
+    "title": "Yaakey",
+    "description": [
+        "Utilized high-resolution satellite imagery for automated building footprint extraction, replacing manual data collection methods.",
+        "Developed a U-Net semantic segmentation model for accurate predictions.",
+        "Benchmarked deep learning models to optimize footprint extraction accuracy.",
+        "Built a polygonizer to convert segmentation into coordinates, significantly accelerating the collection of building footprint data.",
+        "Integrated APIs for real-time data acquisition, enhancing model accuracy."
+    ],
+    "year": "June 2023 – August 2023",
+    "position": "Machine Learning Engineer Intern",
+    "company": "Yaakey, Casablanca, Morocco",
+    "skillsAcquired": [
+        "Geospatial Data",
+        "Semantic Segmentation",
+        "U-Net",
+        "Model Benchmarking",
+        "PyTorch",
+        "EfficientNet",
+        "API Integration",
+        "Geodataframes",
+        "Torchgeo",
+        "Torchvision"
+    ]
+},
+
   { 
     title: "KubicBits", 
     description: [
