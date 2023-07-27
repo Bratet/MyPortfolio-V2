@@ -21,8 +21,7 @@ module.exports = {
         pluginConfig: {
           // Puts tracking script in the head instead of the body
           head: false,
-          // Setting this parameter is also optional
-          respectDNT: true,
+  
 
           // Delays processing pageview events on route update (in milliseconds)
           delayOnRouteUpdate: 0,

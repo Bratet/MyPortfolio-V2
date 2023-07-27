@@ -105,7 +105,7 @@ const ProjectPage = () => {
 				</Fade>
 			</ul>
 			<Fade right>
-                <div className="mt-5">
+			<div className="mt-5 relative">
 				<a
 					href={'https://github.com/Bratet'}
 					target="_blank"
@@ -115,7 +115,7 @@ const ProjectPage = () => {
 					<text className='text-l font-bold'> Check out my github for more !!</text>
 				</a>
 				<span
-					className="absolute h-3 w-3 rounded-full md:mx-64 mx-64 -my-11 flex"
+					className="absolute h-3 w-3 rounded-full bottom-8 left-64 mt-0 mr-0 flex"
 					style={{ "background-color": "var(--ping)" }}
 				>
 					<span className="h-3 w-3 rounded-full bg-primary animate-ping"></span>

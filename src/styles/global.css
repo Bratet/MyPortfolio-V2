@@ -4,8 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@300&display=swap');
 
 body {
-  transition: all 300ms ease 0s;
-  overflow-x: hidden;
+  transition: all 300ms ease 0s;  
   
   --bg: #ebebeb;
   --card: #ebebeb;
@@ -17,6 +16,10 @@ body {
   background-color: var(--bg);
 }
 
+.text-wrap {
+  word-wrap: break-word;
+}
+
 body.dark {
   --bg: #0d192e;
   --card: #14233e;
@@ -26,6 +29,7 @@ body.dark {
   --ping: #66cccc; /* Light teal for dark mode */
   --shadow: #0a1528;
 }
+
 
 .list-decorated li::before {
   content: "• ";
@@ -207,7 +211,7 @@ header {
   background-color: rgba(var(--bg), 0.486);
   backdrop-filter: blur(4px);
   transition: box-shadow 0.3s ease;
-  color: var(--primary)
+  color: var(--primary),
 }
 header[data-active='true'] {
   box-shadow: 0 2px 8px var(--shadow)
@@ -218,6 +222,7 @@ body.dark header[data-active='true'] {
 header {
   position: fixed;
   width: 100%;
+  
 }
 
 /* Dark mode toggle button */

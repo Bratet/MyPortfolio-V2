@@ -40,23 +40,25 @@ const Header = () => {
             </div>
             <h1 className="text-xl font-bold text-center" style={{color: 'var(--secondary)'}}><Fade>I'm an Artificial Intelligence Engineer</Fade></h1>
             <Fade right>
-                <div className="mt-5">
-				<a
-					href={'https://calendly.com/mrabet-ahmed'}
-					target="_blank"
-					className="cursor-pointer font-mono px-3 py-2 flex items-center text-sm text-on-accent border border-square rounded-md transition duration-300 ease-in-out effect"
-                    style={{color: 'var(--secondary)'}}
-				>
-					<text className='text-l font-bold'> Want to talk? Be my guest!</text>
-				</a>
-				<span
-					className="absolute h-3 w-3 rounded-full md:mx-56 mx-60 -my-11 flex"
-					style={{ "background-color": "var(--ping)" }}
-				>
-					<span className="h-3 w-3 rounded-full bg-primary animate-ping"></span>
-				</span>
-                </div>
-			</Fade>
+    <div className="mt-5 relative">
+        <a
+            href={'https://calendly.com/mrabet-ahmed'}
+            target="_blank"
+            className="cursor-pointer font-mono px-3 py-2 flex items-center text-sm text-on-accent border border-square rounded-md transition duration-300 ease-in-out effect"
+            style={{color: 'var(--secondary)'}}
+        >
+            <text className='text-l font-bold'> Want to talk? Be my guest!</text>
+            <span
+                className="absolute h-3 w-3 rounded-full bottom-8 left-56 mt-0 mr-0 flex"
+                style={{ "background-color": "var(--ping)" }}
+            >
+                <span className="h-3 w-3 rounded-full bg-primary animate-ping"></span>
+            </span>
+        </a>
+    </div>
+</Fade>
+
+
         </div>
 
     )
