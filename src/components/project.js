@@ -81,24 +81,23 @@ const ProjectPage = () => {
 										</div>
 									</div>
 									<div className="flex p-4 pb-2 border-t border-gray-200"></div>
-									<div className="flex space-x-3 text-sm font-medium">
-										<div className="flex-auto flex space-x-3">
-											{project.technology.map((tech) => {
-												return (
-													<div
-														className="font-mono inline-flex items-center space-x-2"
-														style={{
-															color: "var(--secondary)",
-														}}
-													>
-														<span className="flex-auto text-sm icon">
-															{tech}
-														</span>
-													</div>
-												);
-											})}
-										</div>
-									</div>
+									<div className="flex-auto flex space-x-3 flex-wrap"> {/* Here, we added flex-wrap*/}
+  {project.technology.map((tech) => {
+    return (
+      <div
+        className="font-mono inline-flex items-center space-x-2"
+        style={{
+          color: "var(--secondary)",
+        }}
+      >
+        <span className="text-sm icon">
+          {tech}
+        </span>
+      </div>
+    );
+  })}
+</div>
+
 								</div>
 							</li>
 						);

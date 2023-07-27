@@ -14,7 +14,7 @@ const experiences = [
     ],
     "year": "June 2023 – August 2023",
     "position": "Machine Learning Engineer Intern",
-    "company": "Yaakey, Casablanca, Morocco",
+    "company": "Yaakey, On-Site, Casablanca, Morocco",
     "skillsAcquired": [
         "Geospatial Data",
         "Semantic Segmentation",
@@ -42,7 +42,7 @@ const experiences = [
     ], 
     year: "28 June 2022 - 28 September 2022",
     position: "AI/Backend Developer Intern",
-    company: "KubicBits",
+    company: "KubicBits, Hybrid, Casablanca, Morocco",
     skillsAcquired: [
         "Python",
         "Django",
