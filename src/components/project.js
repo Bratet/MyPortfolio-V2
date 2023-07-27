@@ -105,7 +105,26 @@ const ProjectPage = () => {
 					})}
 				</Fade>
 			</ul>
+			<Fade right>
+                <div className="mt-5">
+				<a
+					href={'https://github.com/Bratet'}
+					target="_blank"
+					className="cursor-pointer font-mono px-3 py-2 flex items-center text-sm text-on-accent border border-square rounded-md transition duration-300 ease-in-out effect"
+                    style={{color: 'var(--secondary)'}}
+				>
+					<text className='text-l font-bold'> Check out my github for more !!</text>
+				</a>
+				<span
+					className="absolute h-3 w-3 rounded-full md:mx-64 mx-60 -my-11 flex"
+					style={{ "background-color": "var(--ping)" }}
+				>
+					<span className="h-3 w-3 rounded-full bg-primary animate-ping"></span>
+				</span>
+                </div>
+			</Fade>
 		</div>
+		
 	);
 };
 
