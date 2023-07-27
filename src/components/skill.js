@@ -110,7 +110,7 @@ const SkillPage = () => {
             </Fade>
 
             {/* Technology */}
-            <Fade right>
+            <Fade bottom>
                 <div className="p-10">
                     <div className ="content highlight text-center" style={{color: 'var(--primary)'}}>
                         <h1 className="text-lg font-bold" id="highlight1">Technologies</h1>

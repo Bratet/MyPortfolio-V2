@@ -20,7 +20,7 @@ const AboutPage = () => {
 					{"<"} about me{" />"}
 				</h1>
 			</Fade>
-			<Fade right>
+			<Fade bottom>
 				<div
 					className="content highlight xl:px-40 mt-4 text-center text-lg font-sans"
 					style={{ color: "var(--secondary)" }}
@@ -133,7 +133,7 @@ const AboutPage = () => {
 					</h1>
 				</div>
 			</Fade>
-			<Fade right>
+			<Fade bottom>
 			<div className="mt-5 relative">
 				<a
 					href={myResumePDF.pdf.publicURL}

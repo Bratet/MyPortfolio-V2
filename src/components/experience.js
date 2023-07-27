@@ -77,7 +77,7 @@ const ExperiencePage = () => {
   return (
     <Fade>
       <div className="container m-auto mt-5 mb-5 sm:mt-10 sm:mb-10 md:mt-25 md:mb-20 px-2 sm:px-4 md:px-20 max-w-screen-xl py-5 flex flex-col items-center justify-center space-y-6 md:space-x-6">
-      <Fade right><h1 className="font-mono" style={{color: 'var(--primary)'}}>{'<'} experience {' />'}</h1></Fade>
+      <Fade bottom><h1 className="font-mono" style={{color: 'var(--primary)'}}>{'<'} experience {' />'}</h1></Fade>
         <div className="flex flex-col md:flex-row space-y-2 md:space-x-8 mt-8 mb-8 max-w-lg md:max-w-full">
           <div className="flex flex-col space-y-2">
             {experiences.map((exp, index) => (
@@ -102,7 +102,7 @@ const ExperiencePage = () => {
               </button>
             ))}
           </div>
-          <Fade right key={activeTabId}>
+          <Fade bottom key={activeTabId}>
             <div className="shadow-md rounded-2xl p-2 sm:p-4 hover:shadow-xl transform hover:scale-105 transition duration-500 hover:content highlight" style={{background: 'var(--card)', minHeight: '400px'}}>
               <div className="flex-auto ml-3 justify-evenly py-2">
                 <div className="flex flex-wrap ">

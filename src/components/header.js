@@ -39,7 +39,7 @@ const Header = () => {
                 </svg>
             </div>
             <h1 className="text-xl font-bold text-center" style={{color: 'var(--secondary)'}}><Fade>I'm an Artificial Intelligence Engineer</Fade></h1>
-            <Fade right>
+            <Fade bottom>
     <div className="mt-5 relative">
         <a
             href={'https://calendly.com/mrabet-ahmed'}

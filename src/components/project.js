@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade";
 const ProjectPage = () => {
 	return (
 		<div className="container max-w-6xl mt-25 -mb-20 py-10 flex flex-col items-center justify-center">
-			<Fade right>
+			<Fade bottom>
 				<h1 className="font-mono" style={{ color: "var(--primary)" }}>
 					{"<"} projects {" />"}
 				</h1>
@@ -104,7 +104,7 @@ const ProjectPage = () => {
 					})}
 				</Fade>
 			</ul>
-			<Fade right>
+			<Fade bottom>
 			<div className="mt-5 relative">
 				<a
 					href={'https://github.com/Bratet'}
