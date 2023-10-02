@@ -27,7 +27,7 @@
     "gatsby-plugin-dark-mode": "^1.1.2",
     "gatsby-plugin-gatsby-cloud": "^5.13.0-next.0",
     "gatsby-plugin-google-analytics": "^5.11.0",
-    "gatsby-plugin-google-gtag": "^5.11.0",
+    "gatsby-plugin-google-gtag": "^5.12.0",
     "gatsby-plugin-manifest": "^5.11.0",
     "gatsby-plugin-smoothscroll": "^1.2.0",
     "gatsby-plugin-styled-components": "^6.11.0",

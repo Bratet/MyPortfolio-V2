@@ -59,6 +59,28 @@ const Footer = () => {
             <Fade big>
               <span>
                 <a
+                  href="https://medium.com/@ahmedmrabet.002"
+                  aria-label="Visit Medium profile"
+                  title="Visit Medium profile"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="h-8 w-8 icon transition duration-100"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 17 17"
+        
+                  >
+                    <path d="M9.025 8c0 2.485-2.02 4.5-4.513 4.5A4.506 4.506 0 0 1 0 8c0-2.486 2.02-4.5 4.512-4.5A4.506 4.506 0 0 1 9.025 8zm4.95 0c0 2.34-1.01 4.236-2.256 4.236-1.246 0-2.256-1.897-2.256-4.236 0-2.34 1.01-4.236 2.256-4.236 1.246 0 2.256 1.897 2.256 4.236zM16 8c0 2.096-.355 3.795-.794 3.795-.438 0-.793-1.7-.793-3.795 0-2.096.355-3.795.794-3.795.438 0 .793 1.699.793 3.795z"/> 
+                  </svg>
+                </a>
+              </span>
+            </Fade>
+            <Fade big>
+              <span>
+                <a
                   href="https://www.linkedin.com/in/ahmedmrabet/"
                   aria-label="Visit LinkedIn profile"
                   title="Visit LinkedIn profile"
