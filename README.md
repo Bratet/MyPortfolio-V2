@@ -43,8 +43,8 @@ yarn start
 
 Now, the application will be running on http://localhost:8000.
 
-Contributing
+## Contributing
 Feel free to contribute to this project! Fork the repository, create a new branch, make your changes, and then submit a pull request.
 
-License
+## License
 This project is open source and available under the MIT License.
