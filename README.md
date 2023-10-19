@@ -1,6 +1,6 @@
 # MyPortfolio-V2
 
-Welcome to the repository for Ahmed's second version of his portfolio, where he showcases his skills and projects. The portfolio is built using React and Gatsby and is hosted on Vercel.
+Welcome to the second version of my portfolio, where i showcase my skills and projects. The portfolio is built using React and Gatsby and is hosted on Vercel.
 
 ## Live Demo
 
