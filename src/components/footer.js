@@ -59,7 +59,7 @@ const Footer = () => {
             <Fade big>
               <span>
                 <a
-                  href="https://medium.com/@ahmedmrabet.002"
+                  href="https://medium.com/@mrabetahmed"
                   aria-label="Visit Medium profile"
                   title="Visit Medium profile"
                   target="_blank"
